@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <link rel="stylesheet" href="../src/assets/css/style.css">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
@@ -24,7 +23,7 @@
           <img class="svg-icon"
             src="../src/assets/svg/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.svg" alt="Cart">
           <img class="svg-icon" src="../src/assets/svg/heart-svgrepo-com.svg" alt="Heart">
-          <img class="svg-icon" src="../src/assets/svg/1093183.svg" alt="Loupe">
+          <img class="svg-icon" v-on:click="showSearch()" src="../src/assets/svg/1093183.svg" alt="Loupe" id="glass-icon">
         </div>
       </div>
       <nav>
@@ -86,14 +85,40 @@
       </div>
     </div>
   </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 
-  <div class="div-vitrine">
-    <!-- DATABASE!!!-->
-    <div class="image1"></div>
-    <div class="image2"></div>
-    <div class="image3"></div>
-  </div>
+    <div class="div-vitrine-colomn">
+      <div class="div-vitrine-row">
+        <!-- DATABASE!!!-->
+        <div class="image">
+          <img src="../src/assets/images/orange-sneakers.jpeg">
+        </div>
+        <div class="image">
+          <img src="../src/assets/images/pink-sneakers.jpeg">
+        </div>
+        <div class="image">
+          <img src="../src/assets/images/brown-sneakers.jpeg">
+        </div>
+      </div>
+    </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <footer>
     <div class="div-footer">
@@ -122,7 +147,6 @@
               <ol>+33 1 87 66 88 43</ol>
               <ol>contact@mastertascos.com</ol>
             </div>
-
           </ol>
         </ul>
         <ul>
@@ -146,6 +170,7 @@
   </footer>
   <script src="../src/assets/script/Jquery.js"></script>
   <script src="../src/assets/script/script.js"></script>
+  <script src="../src/assets/script/Search.js"></script>
 </body>
 
 </html>
