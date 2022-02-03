@@ -1,17 +1,155 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="../src/assets/css/style.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <!-- <div id="app"></div> -->
+  <header>
+    <div id="header-content">
+      <div class="row header-row">
+        <h1>SNEAKERS SHOP</h1>
+        <div class="header-icon">
+          <img class="svg-icon"
+            src="../src/assets/svg/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.svg" alt="Cart">
+          <img class="svg-icon" src="../src/assets/svg/heart-svgrepo-com.svg" alt="Heart">
+          <img class="svg-icon" src="../src/assets/svg/1093183.svg" alt="Loupe">
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <router-link to="">Tendances 🔥</a>
+          </li>
+          <li class="menu-deroulant">
+            <router-link to="">Marques</router-link>
+            <ul class="sous-menu">
+              <li>
+                <router-link to="">Nike</router-link>
+              </li>
+              <li>
+                <router-link to="">Puma</router-link>
+              </li>
+              <li>
+                <router-link to="">Adidas</router-link>
+              </li>
+              <li>
+                <router-link to="">Converse</router-link>
+              </li>
+              <li>
+                <router-link to="">Yeezy</router-link>
+              </li>
+              <li>
+                <router-link to="">Vans</router-link>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-deroulant">
+            <router-link to="#">Collections</router-link>
+            <ul class="sous-menu">
+              <li>
+                <router-link to="">Pradish Designer</router-link>
+              </li>
+              <li>
+                <router-link to="">Hibernation</router-link>
+              </li>
+              <li>
+                <router-link to="">Sueur</router-link>
+              </li>
+              <li>
+                <router-link to="">Soi-Disant artistique</router-link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <router-link to="">À Propos</a>
+          </li>
+          <li>
+            <router-link to="">Commande</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search-content">
+        <input type="search" name="search" id="input-search" placeholder="Search...">
+      </div>
+    </div>
+  </header>
+
+
+  <div class="div-vitrine">
+    <!-- DATABASE!!!-->
+    <div class="image1"></div>
+    <div class="image2"></div>
+    <div class="image3"></div>
+  </div>
+
+  <footer>
+    <div class="div-footer">
+      <div class="liste-footer">
+        <ul>
+          <ol>
+            <h3>Réseaux</h3>
+            <div class="reseaux-footer">
+              <ol>
+                <router-link to="#">Twitter</a>
+              </ol>
+              <ol>
+                <router-link to="#">Instagram
+              </ol>
+              <ol>
+                <router-link to="#">Facebook
+              </ol>
+            </div>
+          </ol>
+        </ul>
+        <ul>
+          <ol>
+            <h3>Une Question ?</h3>
+            <div class="question-footer">
+              <ol>Nous sommes disponibles du lundi au samedi de 10h à 19h : </ol>
+              <ol>+33 1 87 66 88 43</ol>
+              <ol>contact@mastertascos.com</ol>
+            </div>
+
+          </ol>
+        </ul>
+        <ul>
+
+          <ol>
+            <h3>Nos Snikers</h3>
+            <div class="marque-footer">
+              <ol>Nike</ol>
+              <ol>Puma</ol>
+              <ol>Converse</ol>
+              <ol>Yeeze</ol>
+              <ol>Asics</ol>
+              <ol>Vans</ol>
+            </div>
+          </ol>
+
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+  <script src="../src/assets/script/Jquery.js"></script>
+  <script src="../src/assets/script/script.js"></script>
+</body>
+
 </html>
+
+<!-- built files will be auto injected -->
+<!-- Organisation du HTML-CSS  = Page HOME, avec 3 Snikers en avant. Navbar Avec barre de recherche + Categories-->
+<!-- -->
