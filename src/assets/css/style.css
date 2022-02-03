@@ -139,18 +139,18 @@ nav>ul>li {
     flex: 1;
 }
 
-nav>ul>li>router-link {
+nav>ul>li>a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-li router-link {
+li a {
     text-decoration: none;
 }
 
-.menu-deroulant>router-link:after {
+.menu-deroulant>a:after {
     content: '❯';
     font-size: 15px;
     margin-left: 7px;
@@ -167,13 +167,13 @@ li router-link {
     max-height: 0;
 }
 
-.sous-menu>li>router-link:hover {
+.link:hover {
     text-decoration: underline;
     animation: smoothColor 1s 1;
     color: #f5754e;
 }
 
-.sous-menu>li>router-link {
+.link {
     height: 50px;
     padding-left: 20px;
     width: 100%;
@@ -181,12 +181,12 @@ li router-link {
     display: flex;
 }
 
-nav>ul>li:hover>router-link {
+nav>ul>li:hover>.link {
     animation: smoothColor 1s 1;
     color: #f5754e;
 }
 
-.menu-deroulant:hover>router-link:after {
+.menu-deroulant:hover>.link:after {
     animation: rotationArrow 0.2s linear forwards;
 }
 
@@ -273,17 +273,17 @@ input[type="search"]::placeholder {
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 15px;
-   
-    
+
+
 }
 
 .item-grille {
-   
+
     width: auto;
     height: 200px;
     background: grey;
     border: 2px solid white;
-    
+
 
 }
 
@@ -291,7 +291,7 @@ input[type="search"]::placeholder {
 
 /* Footer --START*/
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
 }
@@ -322,7 +322,7 @@ footer{
 
 .div-footer ol {
     padding: 0.2rem 0rem;
-    
+
 }
 
 

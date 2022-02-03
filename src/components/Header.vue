@@ -1,4 +1,5 @@
 <template>
+<div>
   <header>
     <div id="header-content">
       <div class="row header-row">
@@ -13,53 +14,53 @@
       <nav>
         <ul>
           <li>
-            <router-link to="">Tendances 🔥</router-link>
+            <router-link to="" class="link">Tendances 🔥</router-link>
           </li>
           <li class="menu-deroulant">
-            <router-link to="">Marques</router-link>
+            <router-link to="" class="link">Marques</router-link>
             <ul class="sous-menu">
               <li>
-                <router-link to="">Nike</router-link>
+                <router-link to="" class="link">Nike</router-link>
               </li>
               <li>
-                <router-link to="">Puma</router-link>
+                <router-link to="" class="link">Puma</router-link>
               </li>
               <li>
-                <router-link to="">Adidas</router-link>
+                <router-link to="" class="link">Adidas</router-link>
               </li>
               <li>
-                <router-link to="">Converse</router-link>
+                <router-link to="" class="link">Converse</router-link>
               </li>
               <li>
-                <router-link to="">Yeezy</router-link>
+                <router-link to="" class="link">Yeezy</router-link>
               </li>
               <li>
-                <router-link to="">Vans</router-link>
+                <router-link to="" class="link">Vans</router-link>
               </li>
             </ul>
           </li>
           <li class="menu-deroulant">
-            <router-link to="#">Collections</router-link>
+            <router-link class="link" to="#">Collections</router-link>
             <ul class="sous-menu">
               <li>
-                <router-link to="">Pradish Designer</router-link>
+                <router-link to="" class="link">Pradish Designer</router-link>
               </li>
               <li>
-                <router-link to="">Hibernation</router-link>
+                <router-link to="" class="link">Hibernation</router-link>
               </li>
               <li>
-                <router-link to="">Sueur</router-link>
+                <router-link to="" class="link">Sueur</router-link>
               </li>
               <li>
-                <router-link to="">Soi-Disant artistique</router-link>
+                <router-link to="" class="link">Soi-Disant artistique</router-link>
               </li>
             </ul>
           </li>
           <li>
-            <router-link to="">À Propos</router-link>
+            <router-link to="" class="link">À Propos</router-link>
           </li>
           <li>
-            <router-link to="">Commande</router-link>
+            <router-link to="" class="link">Commande</router-link>
           </li>
         </ul>
       </nav>
@@ -69,15 +70,60 @@
       </div>
     </div>
   </header>
+</div>
 </template>
 
 <script>
 export default {
-    name:"Header"
+  name:"Header"
 }
 </script>
 
-<style>
+<style scoped>
+/* KEYFRAME --START */
+@keyframes rotationArrow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes ShowMenu {
+    0% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+        border-top: 3px solid #ec21af;
+    }
+
+    30% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+        border-top: 3px solid #ec9421;
+    }
+
+    100% {
+        max-height: 50em;
+        border-top: 3px solid #f5754e;
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes smoothColor {
+    0% {
+        color: #ec21af;
+    }
+
+    50% {
+        color: #ec9421;
+    }
+
+    100% {
+        color: #f5754e;
+    }
+}
+
+/* header --START*/
 header {
     position: absolute;
     z-index: 99;
@@ -90,11 +136,12 @@ header {
     height: fit-content;
 }
 
-header h1 {
+header h1  {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     letter-spacing: 5px;
+    text-decoration:none !important;
     padding: 0;
     margin: 0;
     top: 0;
@@ -107,7 +154,6 @@ header h1 {
     background-color: rgb(2, 1, 1);
 
 }
-
 
 .row {
     display: inline;
@@ -147,18 +193,18 @@ nav>ul>li {
     flex: 1;
 }
 
-nav>ul>li>router-link {
+nav>ul>li>a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-li router-link {
+li a {
     text-decoration: none;
 }
 
-.menu-deroulant>router-link:after {
+.menu-deroulant>a:after {
     content: '❯';
     font-size: 15px;
     margin-left: 7px;
@@ -175,13 +221,13 @@ li router-link {
     max-height: 0;
 }
 
-.sous-menu>li>router-link:hover {
+.link:hover {
     text-decoration: underline;
     animation: smoothColor 1s 1;
     color: #f5754e;
 }
 
-.sous-menu>li>router-link {
+.link {
     height: 50px;
     padding-left: 20px;
     width: 100%;
@@ -189,12 +235,12 @@ li router-link {
     display: flex;
 }
 
-nav>ul>li:hover>router-link {
+nav>ul>li:hover>.link {
     animation: smoothColor 1s 1;
     color: #f5754e;
 }
 
-.menu-deroulant:hover>router-link:after {
+.menu-deroulant:hover>.link:after {
     animation: rotationArrow 0.2s linear forwards;
 }
 
@@ -229,4 +275,9 @@ input[type="search"] {
 input[type="search"]::placeholder {
     letter-spacing: 5px;
 }
+
+
+
 </style>
+
+
