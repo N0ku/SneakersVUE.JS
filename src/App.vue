@@ -1,24 +1,38 @@
 <template>
   <Header />
-
   <router-view />
   <Footer />
 </template>
 
 <script>
-import Home from "./components/Home.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import GridView from "./components/Grid.vue";
+import json from "../src/assets/script/data.json";
 
+/* const req = new XMLHttpRequest();
 
+req.open(
+  "GET",
+  "https://raw.githubusercontent.com/Stupidism/goat-sneakers/master/api.json",
+  false
+);
+req.send(null);
+if (req.status == 200) {
+  data = JSON.parse(req.responseText);
+} else {
+  console.log("MEEEEEEH", req.status);
+} */
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    GridView,
+  },
+  data() {
+    return {
+      myJson: json,
+    };
   },
 };
 </script>
@@ -40,6 +54,4 @@ body {
   background-color: #1f1f1f;
   height: 100vh;
 }
-
-
 </style>

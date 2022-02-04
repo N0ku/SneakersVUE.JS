@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/Category',
+    path: '/category/:name',
     name: 'Categorie',
     component: Categorie
   },
@@ -19,9 +19,6 @@ const routes = [
     path: '/marques/:name',
     name: 'marque',
     component: Marque,
-    props: (route) => ({
-      foo: route.query.foo
-    })
   },
   {
     path: '/:catchAll(.*)',

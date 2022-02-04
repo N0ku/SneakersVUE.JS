@@ -49,7 +49,7 @@
                 </li>
                 <li>
                   <router-link
-                    :to="{ name: 'marque', params: { name: 'AirJordan' } }"
+                    :to="{ name: 'marque', params: { name: 'Air Jordan' } }"
                     class="link"
                     >Air Jordan</router-link
                   >
@@ -77,7 +77,7 @@
                 </li>
                 <li>
                   <router-link
-                    :to="{ name: 'marque', params: { name: 'Adidas' } }"
+                    :to="{ name: 'marque', params: { name: 'adidas' } }"
                     class="link"
                     >Adidas</router-link
                   >
@@ -88,19 +88,19 @@
               <router-link class="link" to="">Catégorie</router-link>
               <ul class="sous-menu">
                 <li>
-                  <router-link to="" class="link">BasketBall</router-link>
+                  <router-link :to="{name: 'Categorie', params: { name: 'basketball' }}" class="link">BasketBall</router-link>
                 </li>
                 <li>
-                  <router-link to="" class="link">Lifestyle</router-link>
+                  <router-link :to="{name: 'Categorie', params: { name: 'lifestyle' }}"  class="link">Lifestyle</router-link>
                 </li>
                 <li>
-                  <router-link to="" class="link">Running</router-link>
+                  <router-link :to="{name: 'Categorie', params: { name: 'running' }}"  class="link">Running</router-link>
                 </li>
                 <li>
-                  <router-link to="" class="link">Skate Board</router-link>
+                  <router-link :to="{name: 'Categorie', params: { name: 'skateboarding' }}"  class="link">Skate Board</router-link>
                 </li>
                 <li>
-                  <router-link to="" class="link"
+                  <router-link :to="{name: 'Categorie', params: { name: 'other' }}"  class="link"
                     >Other (Pradish Catégorie)</router-link
                   >
                 </li>
@@ -129,12 +129,12 @@
 </template>
 
 <script>
-var data = localStorage.getItem("dataSneakers");
+var script = require('../assets/script/script.js')
+
 export default {
   name: "Header",
   data() {
     return {
-      donnee: data,
     };
   },
 };
@@ -337,6 +337,10 @@ input[type="search"] {
 
 input[type="search"]::placeholder {
   letter-spacing: 5px;
+}
+
+#glass-icon:hover > .search-content{
+  margin-top:var(--hauteur-menu);
 }
 </style>
 
