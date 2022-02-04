@@ -156,6 +156,30 @@ export default {
         this.price.push(donnee.sneakers[i].retail_price_cents);
       }
     },
+
+    /* getTrend: function () {
+      for (let index = 0; index < this.myjson.sneakers.length; index++) {
+        for (
+          let index2 = 0;
+          index2 < this.myjson.sneakers[index].collection_slugs;
+          index2++
+        ) {
+          if (
+            this.myjson.sneakers[index2].collection_slug == "top-20-trending"
+          ) {
+            this.sneakersTrend.push(this.myjson.sneakers[index]);
+          }
+        }
+      }
+    },
+
+    beforeMount() {
+      console.log("HEY")
+      this.getTrend();
+    }
+    }, */
+
+    
     // MouseOver: function () {
     //   if ((this.isZoomed = false)) {
     //     this.isZoomed = true;
