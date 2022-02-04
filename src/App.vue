@@ -1,16 +1,25 @@
 <template>
-  <Home />
+  <Header />
+
+  <router-view />
+  <Footer />
 </template>
 
 <script>
 import Home from "./components/Home.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import GridView from "./components/Grid.vue";
+
 
 
 export default {
   name: "App",
   components: {
-    Home
-  }
+    Header,
+    Footer,
+    GridView,
+  },
 };
 </script>
 
@@ -28,7 +37,9 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #323244;
+  background-color: #1f1f1f;
   height: 100vh;
 }
+
+
 </style>
