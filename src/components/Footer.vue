@@ -21,7 +21,7 @@
         <ul>
           <ol>
             <h3>Une Question ?</h3>
-            <div class="question-footer">
+            <div class="question-footer" id="sectionRequest">
               <ol>
                 Nous sommes disponibles du lundi au samedi de 10h à 19h :
               </ol>
@@ -90,9 +90,17 @@
 </template>
 
 <script>
+var script = require('../assets/script/script.js')
+
 export default {
   name: "Footer",
 };
+
+
+
+const button = document.getElementById('submit-button')
+const search = document.getElementById('footer-search')
+
 </script>
 
 <style>

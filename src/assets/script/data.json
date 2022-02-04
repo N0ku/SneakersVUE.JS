@@ -6055,6 +6055,83 @@
       "status": "active",
       "story_html": "<p>adidas dropped the NMD_R1 &#39;Blizzard&#39; colorway in January 2018. It features a stretch mesh upper made from twisted two-tone yarn for a unique textured effect reminiscent of medieval chainmail armor. It also comes with a Carbon tongue patch with a Trefoil, Welded Core Black Three-Stripes on the side panel, and a molded matte black heel patch. Underfoot, the shoe boasts a white Boost midsole with Carbon EVA midsole bumpers and an all-black rubber outsole.</p>\n",
       "upper_material": ""
+    },
+    {
+      "box_condition": "badly_damaged",
+      "brand_name": "Pradish-Qualidad",
+      "category": [
+        "other"
+      ],
+      "collection_slugs": [
+        "goat-clean",
+        "kanye-west",
+        "top-20-trending",
+        "yeezy",
+        "yeezy-1"
+      ],
+      "color": "White",
+      "designer": "Our favorite Pradishhh",
+      "details": "White/Core Black/Red",
+      "gender": [
+        "men"
+      ],
+      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/014/979/033/original/105568_00.png.png",
+      "has_picture": true,
+      "has_stock": true,
+      "id": 666,
+      "keywords": [
+        "350",
+        "Yeezy"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/014/979/033/original/105568_00.png.png",
+      "midsole": "Boost",
+      "name": "Yeezy Boost 350 V2 'Zebra'",
+      "nickname": "Zebra",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/014/979/033/original/105568_00.png.png",
+      "product_template_id": 105568,
+      "release_date": "2017-02-25T23:59:59.000Z",
+      "release_date_unix": 1488067199,
+      "release_year": 2017,
+      "retail_price_cents": 22000,
+      "shoe_condition": "used",
+      "silhouette": "Yeezy Boost 350",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5,
+        13,
+        13.5,
+        14,
+        14.5,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        3,
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5
+      ],
+      "sku": "CP9654",
+      "slug": "yeezy-boost-350-v2-zebra-cp9654",
+      "status": "active",
+      "story_html": "<p>Released on February 25, 2017, the Yeezy Boost 350 V2 ‘Zebra’ combines a white/core black Primeknit upper with red SPLY 350 branding and a translucent white midsole housing full-length Boost. Sold exclusively at adidas.com, Yeezy Supply, and select adidas flagship stores, the ‘Zebra’ sold out instantly but was restocked on June 24th, 2017. Another restock of the ‘Zebra’ arrived November 16, 2018, with more pairs hitting the marketplace and delivering on Kanye’s promise of Yeezy’s being more accessible to anyone that wanted them.</p>\n",
+      "upper_material": "Primeknit"
     }
   ]
 }

@@ -74,7 +74,6 @@
 
 <script>
 import GridView from "./Grid.vue";
-
 // //Prog Cloning Item
 // const Clone = {
 //   template:
@@ -88,16 +87,13 @@ import GridView from "./Grid.vue";
 //     //Mettre fonction qui regarde dans la data le nombre de produits avec X infos.
 //   },
 // };
-
 //THOMAS
 // const testClone = new Vue({
 //   el: "thomas",
-
 //   data: {
 //     items: [],
 //     value: 0,
 //   },
-
 //   methods: {
 //     addCase() {
 //       const RenderCase = {
@@ -113,9 +109,7 @@ import GridView from "./Grid.vue";
 //     },
 //   },
 // });
-
 const req = new XMLHttpRequest();
-
 req.open(
   "GET",
   "https://raw.githubusercontent.com/Stupidism/goat-sneakers/master/api.json",
@@ -127,7 +121,6 @@ if (req.status == 200) {
 } else {
   console.log("MEEEEEEH", req.status);
 }
-
 export default {
   name: "Home",
   components: {
@@ -149,11 +142,9 @@ export default {
       index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     };
   },
-
   mounted() {
     // this.data == this.DataLoad(data);
   },
-
   methods: {
     DataLoad(data) {
       for (var i = 0; i < 20; i++) {

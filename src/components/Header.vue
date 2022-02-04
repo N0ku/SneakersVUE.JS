@@ -88,26 +88,49 @@
               <router-link class="link" to="">Catégorie</router-link>
               <ul class="sous-menu">
                 <li>
-                  <router-link :to="{name: 'Categorie', params: { name: 'basketball' }}" class="link">BasketBall</router-link>
+                  <router-link
+                    :to="{ name: 'Categorie', params: { name: 'basketball' } }"
+                    class="link"
+                    >BasketBall</router-link
+                  >
                 </li>
                 <li>
-                  <router-link :to="{name: 'Categorie', params: { name: 'lifestyle' }}"  class="link">Lifestyle</router-link>
+                  <router-link
+                    :to="{ name: 'Categorie', params: { name: 'lifestyle' } }"
+                    class="link"
+                    >Lifestyle</router-link
+                  >
                 </li>
                 <li>
-                  <router-link :to="{name: 'Categorie', params: { name: 'running' }}"  class="link">Running</router-link>
+                  <router-link
+                    :to="{ name: 'Categorie', params: { name: 'running' } }"
+                    class="link"
+                    >Running</router-link
+                  >
                 </li>
                 <li>
-                  <router-link :to="{name: 'Categorie', params: { name: 'skateboarding' }}"  class="link">Skate Board</router-link>
+                  <router-link
+                    :to="{
+                      name: 'Categorie',
+                      params: { name: 'skateboarding' },
+                    }"
+                    class="link"
+                    >Skate Board</router-link
+                  >
                 </li>
                 <li>
-                  <router-link :to="{name: 'Categorie', params: { name: 'other' }}"  class="link"
+                  <router-link
+                    :to="{ name: 'Categorie', params: { name: 'other' } }"
+                    class="link"
                     >Other (Pradish Catégorie)</router-link
                   >
                 </li>
               </ul>
             </li>
             <li>
-              <router-link to="" class="link">À Propos</router-link>
+              <router-link to="" class="link"
+                ><a href="#sectionRequest">À Propos</a></router-link
+              >
             </li>
             <li>
               <router-link to="" class="link">Commande</router-link>
@@ -129,13 +152,12 @@
 </template>
 
 <script>
-var script = require('../assets/script/script.js')
+var script = require("../assets/script/script.js");
 
 export default {
   name: "Header",
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
@@ -339,8 +361,8 @@ input[type="search"]::placeholder {
   letter-spacing: 5px;
 }
 
-#glass-icon:hover > .search-content{
-  margin-top:var(--hauteur-menu);
+#glass-icon:hover > .search-content {
+  margin-top: var(--hauteur-menu);
 }
 </style>
 
