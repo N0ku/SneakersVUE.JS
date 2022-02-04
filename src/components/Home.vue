@@ -223,11 +223,11 @@ export default {
 
 .div-collection-grille {
   display: grid;
-  max-width: 2000px;
+  max-width: 1600px;
   width: 95%;
   height: auto;
   margin: 15px auto;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(auto-fill, 500px);
   justify-content: center;
   grid-gap: 15px;
 }
@@ -238,9 +238,7 @@ export default {
   color: black;
   -webkit-box-shadow: 5px 5px 32px -9px rgba(255, 204, 166, 0.62);
   box-shadow: 5px 5px 32px -9px rgba(255, 204, 166, 0.62);
-  background: (255, 231, 182,0.5);
-  
-
+  background: (255, 231, 182, 0.5);
 }
 
 .item-collection-grille {
